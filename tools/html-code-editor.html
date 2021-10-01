@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS, Javascript - Code Editor</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/html-code-editor.css">
+</head>
+
+<body>
+    <main>
+        <!-- Navbar Section  -->
+        <nav id="navbar">
+            <div class="brand-logo">
+                <img src="../img/mainlogo.png" alt="CodeSuffer">
+            </div>
+            <div>
+                <ol id="main-menu">
+                    <li><a href="/"><i class="fa fa-home"></i></a></li>
+                    <li><a href="https://helpchandan.blogspot.com/" target="_blank">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="https://helpchandan.blogspot.com" target="_blank">Blogs</a></li>
+                    <li><a href="#">Tools</a></li>
+                    <li><a href="https://webchat-messenger.herokuapp.com/" target="_blank">WebChat</a></li>
+                </ol>
+
+            </div>
+            <div id="menu-lines" onclick="openNavbar()">
+                &#9776;
+            </div>
+            <div id="side-navbar">
+                <div id="close-side-menu" onclick="closeSideMenu()">
+                    &times;
+                </div>
+            </div>
+            </div>
+            <script src="../js/navbar.js"></script>
+        </nav>
+    </main>
+    <div class="code-editor-heading">
+    <h2>HTML, CSS, JavaScript - Code Editor</h2></div>
+
+    <!--Code Editor Tool Code -->
+    <div class="tool-section">
+        <textarea rows="20" cols="50" placeholder="Type HTML Code here ..."></textarea>
+
+        <button style="border:0" type="button" onclick="updateIframe()" class="button-success">Run Code &nbsp; <i class="fa fa-chevron-right"></i> 
+        </button>
+        <button style="border:0" type="button" onclick="" class="button-danger">Refresh &nbsp; <i class="fa fa-refresh"></i> 
+        </button>
+
+        <iframe id="myframe"></iframe>
+    </div>
+
+    <!-- JavaScript Code Start here -->
+    <script src="../js/html-code-editor.js"></script>
+    <script type="text/javascript">
+        function updateIframe() {
+            var myFrame = $("#myframe").contents().find('body');
+            var textareaValue = $("textarea").val();
+            myFrame.html(textareaValue);
+        }
+    </script>
+</body>
+
+</html>

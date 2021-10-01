@@ -1,0 +1,38 @@
+.tools{
+    display: grid;
+    width: 70vw;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: auto; */
+}
+.item{
+    background: crimson;
+    width: 20vw;
+    height: 20vw;
+    margin: auto;
+    border-radius: 5px;
+}
+.item h2{
+    padding: 4px;
+    text-align: center;
+}
+.item1{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: var(--background-white);
+    font-size: 24px;
+    font-weight: bold;
+}
+.item1 div{
+    display: inline;
+    padding: 40px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    font-size: 45px;
+}
+
+.heading{
+    text-align: center;
+    margin: 20px 0;
+}

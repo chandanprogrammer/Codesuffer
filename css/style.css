@@ -9,14 +9,45 @@
   --secondary-color: #272822;
   --body-color: #e3e9ed;
   --text-color: #1a1a1a;
+  --text-heading: #000000;
   --text-white: #ffffff;
   --background-white: #ffffff;
-  --text-heading: #000000;
   --mobile-navbar: #e9e9e9;
-  --btn-background: #2BC48A;
+  --btn-success: #0ba067;
+  --btn-success-hover: #0c6e49;
+  --btn-danger: #ef3f49;
+  --btn-danger-hover: #b43339;
 }
 body {
   background-color: var(--body-color);
   font-family: "Poppins", sans-serif;
   color: var(--tex-color);
+}
+.button-success {
+  background: var(--btn-success);
+  color: var(--text-white);
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.button-success:hover{
+  background: var(--btn-success-hover);
+  color: var(--text-white);
+  transition: all 0.5s;
+}
+.button-danger {
+  background: var(--btn-danger);
+  color: var(--text-white);
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.button-danger:hover{
+  background: var(--btn-danger-hover);
+  color: var(--text-white);
+  transition: all 0.5s;
 }

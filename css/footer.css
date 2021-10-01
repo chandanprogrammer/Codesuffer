@@ -1,9 +1,14 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #footer {
-    background-color: var(--primary-color);
-    color: var(--text-white);
-  }
-  #copyright {
-    color: var(--text-white);
-    padding: 14px 75px;
-  }
-  
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}
+#copyright {
+  color: var(--text-white);
+  padding: 14px 75px;
+}
